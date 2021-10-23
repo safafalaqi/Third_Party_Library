@@ -11,6 +11,7 @@ import android.text.Editable
 
 import android.text.TextWatcher
 import android.widget.TextView
+import com.airbnb.lottie.LottieAnimationView
 import me.grantland.widget.AutofitHelper
 
 
@@ -34,5 +35,9 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+    }
+    fun turn(v:View){
+        val animation=findViewById<LottieAnimationView>(R.id.animationView)
+        animation.playAnimation()
     }
 }
